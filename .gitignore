@@ -1,2 +1,13 @@
-NFC-card.kicad_pcb-bak
-NFC-card.sch-bak
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+*.net
+
