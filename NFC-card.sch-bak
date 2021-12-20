@@ -1,0 +1,109 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NT3H2111:NT3H2111 U1
+U 1 1 61B786C3
+P 4000 2250
+F 0 "U1" H 4050 2225 50  0000 C CNN
+F 1 "NT3H2111" H 4050 2134 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4000 2250 50  0001 C CNN
+F 3 "" H 4000 2250 50  0001 C CNN
+	1    4000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61B79988
+P 5300 2550
+F 0 "R1" H 5359 2596 50  0000 L CNN
+F 1 "47" H 5359 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 2550 50  0001 C CNN
+F 3 "~" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61B7A3D5
+P 5300 2900
+F 0 "D1" H 5293 3117 50  0000 C CNN
+F 1 "LED" H 5293 3026 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5300 2900 50  0001 C CNN
+F 3 "~" H 5300 2900 50  0001 C CNN
+	1    5300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61B7AF78
+P 4850 2700
+F 0 "C1" H 4942 2746 50  0000 L CNN
+F 1 "0.22uF" H 4942 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4850 2700 50  0001 C CNN
+F 3 "~" H 4850 2700 50  0001 C CNN
+	1    4850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 61B7B98A
+P 3300 2250
+F 0 "L1" H 3256 2204 50  0000 R CNN
+F 1 "NFC_ANT" H 3256 2295 50  0000 R CNN
+F 2 "NFC-card:antenna" H 3300 2250 50  0001 C CNN
+F 3 "~" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2600 4400 2700
+Wire Wire Line
+	4400 2700 4700 2700
+Wire Wire Line
+	4700 2700 4700 2600
+Wire Wire Line
+	4700 2600 4850 2600
+Connection ~ 4400 2700
+Wire Wire Line
+	4850 2600 4850 2450
+Wire Wire Line
+	4850 2450 5300 2450
+Connection ~ 4850 2600
+Wire Wire Line
+	5300 2650 5300 2750
+Wire Wire Line
+	5300 3050 4850 3050
+Wire Wire Line
+	4850 3050 4850 2800
+Wire Wire Line
+	4850 3050 3500 3050
+Wire Wire Line
+	3500 3050 3500 2600
+Wire Wire Line
+	3500 2600 3700 2600
+Connection ~ 4850 3050
+Wire Wire Line
+	4400 2150 4400 2500
+Wire Wire Line
+	3300 2150 4400 2150
+Wire Wire Line
+	3300 2350 3300 2500
+Wire Wire Line
+	3300 2500 3700 2500
+NoConn ~ 4400 2800
+NoConn ~ 3700 2800
+NoConn ~ 3700 2700
+$EndSCHEMATC
